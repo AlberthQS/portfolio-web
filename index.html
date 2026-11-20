@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101315">
+  <meta name="description" content="Portafolio de Alberth, estudiante de Ingeniería de Sistemas. Proyectos, aprendizaje y tecnología.">
+  <meta property="og:title" content="Alberth | Portafolio">
+  <meta property="og:description" content="Estudiante de Ingeniería de Sistemas. Aprendiendo y construyendo proyectos propios.">
+  <title>Alberth — Portafolio</title>
+  <link rel="icon" href="assets/perro.webp" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <img src="assets/perro.webp" alt="" width="36" height="36">
+        <span>alberth<span class="brand-dot">.</span></span>
+      </a>
+      <nav aria-label="Principal" class="nav">
+        <a href="#sobre-mi" data-i18n="navAbout">Sobre mí</a>
+        <a href="#proyectos" data-i18n="navProjects">Proyectos</a>
+        <a href="#aprendizaje" data-i18n="navLearning">Aprendizaje</a>
+        <a class="nav-contact" href="#contacto" data-i18n="navContact">Contacto</a>
+      </nav>
+      <button class="language-switch" id="languageSwitch" type="button" aria-label="Switch to English">EN</button>
+    </div>
+  </header>
+  <main id="main">
+    <section id="inicio" class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">Estudiante de Ingeniería de Sistemas · Colombia</span></div>
+        <h1 data-i18n="title">Aprender. Crear.<br><span>Seguir mejorando.</span></h1>
+        <p class="hero-text" data-i18n="heroDescription">Me interesa la tecnología, el desarrollo de proyectos reales y transformar ideas en soluciones digitales útiles. Este espacio muestra lo que voy construyendo.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#proyectos" data-i18n="seeProjects">Explorar proyectos <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="https://github.com/AlberthQS" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Logo personal de perro blanco sobre fondo negro" role="img">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <img src="assets/perro.webp" width="240" height="240" alt="">
+        <span class="art-caption">BUILD • LEARN • IMPROVE</span>
+      </div>
+    </section>
+    <section id="sobre-mi" class="section section-alt">
+      <div class="wrap two-col">
+        <div><p class="overline" data-i18n="aboutLabel">01 / SOBRE MÍ</p><h2 data-i18n="aboutTitle">Curiosidad y constancia.</h2></div>
+        <div><p class="section-lead" data-i18n="aboutText">Soy estudiante de Ingeniería de Sistemas. Estoy fortaleciendo mis fundamentos de programación, bases de datos y desarrollo web mientras trabajo en proyectos personales y académicos.</p><p class="subtle" data-i18n="aboutSmall">Busco oportunidades para aprender, colaborar y seguir creciendo. Este portafolio presenta trabajo y aprendizaje, sin exagerar mi experiencia.</p></div>
+      </div>
+    </section>
+    <section id="proyectos" class="section wrap">
+      <p class="overline" data-i18n="projectsLabel">02 / PROYECTOS</p>
+      <div class="section-heading"><h2 data-i18n="projectsTitle">Proyectos seleccionados.</h2><p data-i18n="projectsNote">Ideas que se convierten en productos y práctica.</p></div>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <div class="card-top"><span class="card-index">01</span><span class="project-type" data-i18n="personalProject">PROYECTO PERSONAL</span></div>
+          <div class="project-symbol">A<span class="project-symbol-dot">•</span></div>
+          <h3>AUTOPROOF</h3><p data-i18n="autoproofText">Proyecto SaaS personal con presencia web pública. Desarrollo e iteración continua de una idea de negocio digital.</p>
+          <div class="tags"><span>SaaS</span><span data-i18n="entrepreneurship">Emprendimiento</span></div>
+          <a href="https://autoproofsaas.pages.dev/" target="_blank" rel="noopener noreferrer" data-i18n="visitWeb">Visitar sitio ↗</a>
+        </article>
+        <article class="project-card">
+          <div class="card-top"><span class="card-index">02</span><span class="project-type" data-i18n="practiceProject">PROYECTO DE PRÁCTICA</span></div>
+          <div class="project-symbol">✓</div>
+          <h3>FocusBoard Lite</h3><p data-i18n="focusboardText">Aplicación sencilla para organizar tareas. Usa JavaScript y guarda la información localmente en el navegador.</p>
+          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          <a href="https://github.com/AlberthQS/focusboard-lite" target="_blank" rel="noopener noreferrer" data-i18n="seeRepository">Ver repositorio ↗</a>
+        </article>
+      </div>
+    </section>
+    <section id="aprendizaje" class="section section-alt">
+      <div class="wrap two-col">
+        <div><p class="overline" data-i18n="learningLabel">03 / APRENDIZAJE</p><h2 data-i18n="learningTitle">Construyendo fundamentos.</h2></div>
+        <div>
+          <p class="section-lead" data-i18n="learningText">Tecnologías y herramientas que estudio o practico actualmente. No representa un nivel de dominio profesional.</p>
+          <div class="skills"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>SQL / MySQL</span><span>Git & GitHub</span></div>
+        </div>
+      </div>
+    </section>
+    <section id="contacto" class="section wrap contact">
+      <p class="overline" data-i18n="contactLabel">04 / CONTACTO</p><h2 data-i18n="contactTitle">¿Hablamos?</h2>
+      <p data-i18n="contactText">Estoy abierto a oportunidades de aprendizaje, prácticas y colaboraciones.</p>
+      <a class="btn btn-primary" href="https://github.com/AlberthQS" target="_blank" rel="noopener noreferrer" data-i18n="connectGithub">Conectar en GitHub ↗</a>
+    </section>
+  </main>
+  <footer class="footer"><div class="wrap footer-inner"><span>© <span id="year"></span> Alberth</span><span data-i18n="footerText">Creado con HTML, CSS y JavaScript.</span></div></footer>
+</body>
+</html>
